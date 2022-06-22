@@ -32,17 +32,18 @@ root.render(
 
 function Cont(){
     const [count,setCont] =useState(0)
-    function clickOne(){
-        setCont(count+1)
+    function clickOne(i){
+        setCont(count+i)
     }
-    function clickTwo(){
-        setCont(count-1)
+    function clickTwo(i){
+        setCont(count-i)
     }
+
     return (
         <div>
             <div>Значение:{count}</div>
-            <button onClick={clickOne}>+1</button>
-            <button onClick={clickTwo}>-1</button>
+            <button onClick={()=>clickOne(1)}>+1</button>
+            <button onClick={()=>clickTwo(2)}>-1</button>
         </div>
     )
 
@@ -56,4 +57,25 @@ function Cont(){
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
+//
+// let input = document.querySelector('.input')
+// let button = document.querySelector('button')
+//
+// input.addEventListener('keyup',function (event){
+//     localStorage.setItem('key',input.value)
+//     // console.log(localStorage.getItem('key'))
+// })
+//
+//
+//
+// const value = localStorage.getItem('key')
+//
+//
+//
+// button.addEventListener('click',function (){
+//     localStorage.removeItem('key')
+// })
+//
+// if(value){
+//     input.setAttribute('value', value)
+// }
