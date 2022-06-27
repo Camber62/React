@@ -80,7 +80,6 @@ reportWebVitals();
 //     input.setAttribute('value', value)
 // }
 
-lesson2
 
 import React ,{useState}from 'react';
 import ReactDOM from 'react-dom/client';
