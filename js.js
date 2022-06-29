@@ -172,3 +172,145 @@ function addFoot(){
 reportWebVitals();
 
 
+
+
+
+
+import React, {useEffect, useState} from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const initCount = 0
+
+
+root.render(
+    <div>
+        <Counter/>
+    </div>
+);
+
+// function Counter(){
+//     let [count,setCount]=useState(0)
+//     useEffect(()=>{
+//         console.log('count',count)
+//     },[count])
+//     return(
+//         <div>
+//             <div>Число:{count}</div>
+//             <button onClick={()=>setCount(++count)}>Увеличение</button>
+//         </div>
+//     )
+// }
+
+// function Clock(){
+//     const [date,setDate]=useState(new Date());
+//     useEffect(()=>{
+//         setInterval(()=>{
+//             setDate(new Date())
+//         },1000)
+//     },[])
+//     return(
+//         <div>
+//             <span>Текущее время:{date.toLocaleString()}</span>
+//         </div>
+//     )
+// }
+
+
+// function HelloWorld() {
+//     const [display, setDisplay] = useState(true)
+//
+//     return (
+//         <div>
+//             <button onClick={Show} >{display ? 'Show': 'None'}</button>
+//             <div className={`${display? 'display' : ''}`}>Hello World</div>
+//         </div>
+//     )
+//     function Show() {
+//         setDisplay(!display)
+//     }
+// }
+
+// function FavoritesList(){
+//     const [foods,setFoods] = useState(['Пльмени','Паста','Пицца','Окрошка']);
+//     const [value,setValue]=useState('')
+// function addFoot(){
+//
+//     setFoods(foods.concat([value]))
+// }
+//
+//     return(
+//         <div>
+//             value:{value}
+//             <input type="text"
+//                    value={value}
+//                    onChange={(e) =>setValue(e.target.value)}/><button onClick={addFoot}  >addFoot</button>
+//             <ul>
+//                 {foods.map(function (food) {
+//                     return (<li>{food}</li>);
+//                 })}
+//             </ul>
+//
+//         </div>
+//     )
+// }
+
+// root.render(
+//     <div class="red">
+//         <HelloWorld name="Alexey" lang="en"/>
+//         <HelloWorld name="Алексей" lang="ru"/>
+//     </div>
+// );
+//
+// function HelloWorld(Props) {
+//     Props.name='Petr'
+//     if (Props.lang==="ru"){
+//         return (
+//             <h1>Привет, {Props.name}</h1>
+//         )
+//     }
+//     if (Props.lang==="en"){
+//         return (
+//             <h1>Hello,{Props.name}</h1>
+//         )
+//     }
+// }
+
+
+// }
+// root.render(
+//     <Cont count="100"/>
+// )
+//
+// function Cont(Props){
+//     const [count,setCont] =useState(Props.count)
+//     function clickOne(i){
+//         setCont(count+i)
+//     }
+//     function clickTwo(i){
+//         setCont(count-i)
+//     }
+//
+//     return (
+//         <div>
+//             <div>Значение:{count}</div>
+//             <button onClick={()=>clickOne(1)}>+1</button>
+//             <button onClick={()=>clickTwo(2)}>-1</button>
+//         </div>
+//     )
+//
+// }
+
+
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+
+
